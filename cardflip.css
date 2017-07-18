@@ -1,0 +1,47 @@
+/* entire container keeps perspective */
+.flip-container {
+  perspective: 1000px;
+
+ }
+
+/* flip the pane when clicked */
+.flip-container.clicked .flipper {
+  transform: rotateY(180deg);
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: all 1s cubic-bezier(0, 0.51, 0.62, 1.25);
+  transform-style: preserve-3d;
+  position: relative;
+  width: 220px;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  transform: rotateY(180deg);
+  background: black;
+}
+
+/* back, initially hidden pane */
+.back {
+  background-image: url('./images/d3cardback.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+  position: relative;
+}
+
+.back .card-header {
+  background-color: rgba(0,0,0,0);
+  border-bottom: none;
+}

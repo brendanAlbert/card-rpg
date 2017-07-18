@@ -1,0 +1,190 @@
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+@font-face {
+	font-family:"Diablo Heavy";
+	src:url("./fonts/DIABLO_H.eot?") format("eot"),
+	url("./fonts/DIABLO_H.woff") format("woff"),
+	url("./fonts/DIABLO_H.ttf") format("truetype"),
+	url("./fonts/DIABLO_H.svg#DiabloHeavy") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+	/* font-family: "Lato", sans-serif; */
+	font-family: "Diablo Heavy", sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+}
+
+/* Styles for background pictures */
+
+.pimg {
+	position: relative;
+	/*opacity: 0.70;*/
+  background: rgba(0, 0, 0, 0.7);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	/* fixed = parallax, scroll = normal */
+	background-attachment: fixed;
+}
+
+.pimg1 {
+	background-image:url('./images/backgrounds/tristram.jpg');
+	min-height: 100%;
+}
+
+.pimg2 {
+	background-image: url('./images/backgrounds/docks.jpg');
+	min-height: 100%;
+}
+
+.pimg3 {
+	background-image: url('./images/backgrounds/cathedral-hall.jpg');
+	min-height: 100%;
+}
+
+.pimg4 {
+	background-image: url('./images/backgrounds/skeleton-king.jpg');
+	min-height: 100%;
+}
+
+.pimg5 {
+	background-image: url('./images/backgrounds/smithy.jpg');
+	min-height: 100%;
+}
+
+.pimg6 {
+	background-image: url('./images/backgrounds/camp.jpg');
+	min-height: 100%;
+}
+
+.pimg7 {
+	background-image: url('./images/backgrounds/tavern.jpg');
+	min-height: 100%;
+}
+
+.pimg8 {
+	background-image: url('./images/backgrounds/darkchurchpews.jpg');
+	min-height: 100%;
+}
+
+.pimg9 {
+	background-image: url('./images/backgrounds/greathall.jpg');
+	min-height: 100%;
+}
+
+.pimg10 {
+	background-image: url('./images/backgrounds/dungeon.jpg');
+	min-height: 100%;
+}
+
+.pimg11 {
+	background-image: url('./images/backgrounds/chamber.jpg');
+	min-height: 100%;
+}
+
+.pimg12 {
+	background-image: url('./images/backgrounds/library.jpg');
+	min-height: 100%;
+}
+
+.section {
+	text-align: center;
+	padding: 50px 80px;
+}
+
+.section-light {
+	background-color: #f4f4f4;
+	color: #666;
+}
+
+.section-dark {
+	background-color: #282e34;
+	color: #ddd;
+}
+
+/*  All the styles for cards below here */
+
+.logo-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.card {
+	position: relative;
+	/*background-color: #fff;*/ /*#111*/
+	display: flex;
+	margin: 20px 20px;
+	min-width: 100px;
+	opacity: .80;
+
+	width: 220px;
+
+
+
+
+	display: flex;
+	flex-direction: column;
+
+  backface-visibility: hidden;
+	/*box-shadow: 0 6px 20px 0 rgba(0,0,0,0.4), 0 10px 25px 0 rgba(0,0,0,0.09);*/
+}
+
+.card-header {
+  color: #000; /*#D32F2F*/
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  border-bottom: 3px solid #8B4513; /*#EF9a9a*/
+  border-radius: 10px 10px 0 0;
+  background-color: #B22;
+  padding: 5px 10px;
+
+  min-height: 40px;
+  min-width: 200px;
+}
+
+.card-main {
+  display: flex;
+  min-height: 260px;       /* Children inherit/use flexbox */
+  min-width: 210px;
+  flex-direction: column;   /* Rotate axis to vertical  */
+  justify-content: center;  /* Group children in center */
+  align-items: center;      /* group children in center (+axis) */
+  padding: 15px 5px;          /* add padding to the top/bottom */
+  box-shadow: 0 0 30px #333;
+  /*box-shadow: 0 6px 20px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);*/
+  border-radius: 0 0 10px 10px;
+}
+
+.material-icons {
+  font-size: 36px;
+  color: #D32F2F;
+  margin-bottom: 5px;
+}
+
+.main-description {
+  color: #D32F2F;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+/*  media queries */
+
+@media (max-width: 479) {
+
+}

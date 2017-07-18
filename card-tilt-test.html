@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>card tilt test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="Animate.css">
+  	<link rel="stylesheet" href="cardflip.css">
+    <link rel="stylesheet" href="card_flip_test.css">
+
+  </head>
+  <body>
+
+<div class="card-container">
+    <div class="card flip-container" onclick="document.querySelector('.flip-container').classList.toggle('clicked')";>
+      <div class="tilt flipper" data-tilt data-tilt-reverse="true" data-tilt-scale="1.1">
+        <div class="back">
+          <div class="card-header"></div>
+          <div class="card-main">
+            <i class="material-icons"></i>
+            <div class="main-description">
+              <p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="front">
+          <div class="card-header">Old Key</div>
+          <div class="card-main">
+            <i class="material-icons">vpn_key</i>
+            <div class="main-description">
+              <p>
+                There is a key lying on a tome. The thick layer of dust upon both suggests it has not been used for quite some time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<script type="text/javascript" src="vanilla.tilt.min.js"></script>
+<script type="text/javascript">
+
+function removeTilt() {
+    document.querySelector('.tilt').vanillaTilt.destroy();
+    document.getElementsByClassName('tilt')[0].removeAttribute('style');
+    document.getElementsByClassName('flip-container')[0].removeAttribute('onclick');
+    removeEventListener('click', removeTilt);
+
+}
+
+document.querySelector('.flip-container').addEventListener('click', removeTilt);
+
+
+</script>
+  </body>
+</html>
